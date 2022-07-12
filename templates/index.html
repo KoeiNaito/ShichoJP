@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="static/css/index_mobile.css" media="screen and (max-width:480px)">
+        <link rel="stylesheet" href="static/css/index.css" media="screen and (min-width:1024px)">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Tiramisù</title>
+    </head>
+
+    <header>
+        <h1>
+            <a href="/">Tiramisù</a>
+        </h1>
+        <nav class="pc-nav">
+            <ul>
+                <li><a href="/usage">使い方</a></li>
+                <li><a href="/donate">寄付のお願い</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <div class="body-class">
+            <p class="theme">このサイトは<a href="https://shichojp.com">ShichoJP</a>の動画をダウンロードするサイトです!!</p>
+            <p class="input-an">URLを下のボックスに入力してください!!</p>
+            <form action="?" method="POST" autocomplete="off">
+                <p><input type="text" name="url" placeholder="URLを入力" class="url-input"></p>
+                <p><input type="text" name="file_name" placeholder="ファイル名を決めて下さい!!" class="file-input"></p>
+                <p><input type="text" name="story" placeholder="話数" class="story-input"></p>
+                <p><input type="text" name="sever_num" placeholder="番号" class="server-input"></p>
+                <p><input type="submit" value="Download" class="input-button" formaction="/results"></p>
+                <p><input type="submit" value="ダウンロードが終了したら必ずクリック" class="download-finish" formaction="/status"></p>
+            </form>
+        </div>
+    </body>
+</html>

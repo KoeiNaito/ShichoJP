@@ -1,0 +1,154 @@
+header {
+    padding: 20px 4% 10px;
+    position: absolute;
+    top: 10px;
+    width: 87%;
+    background-color: #584b4f;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffd152;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+li {
+    margin: 0 0 0 10px;
+    font-size: 15px;
+}
+
+body {
+    background-color: #37383c;
+    color: #efdab9;
+    font-family: cursive;
+}
+
+.theme {
+    margin-top: 200px;
+    font-size: 20px;
+    text-align: center;
+    animation-name: fadeUpAnime;/*アニメーションの定義名*/
+    animation-duration:0.5s;/*アニメーション変化時間 ※デフォルト*/
+    animation-fill-mode:forwards;/*アニメーションの開始と終了時の状態を指定*/
+    opacity:0;
+}
+
+.input-an {
+    text-align: center;
+    animation-name: fadeUpAnime;/*アニメーションの定義名*/
+    animation-duration:1s;/*アニメーション変化時間 ※デフォルト*/
+    animation-fill-mode:forwards;/*アニメーションの開始と終了時の状態を指定*/
+    opacity:0;
+}
+
+.url-input {
+    font-size: 20px;
+    width: 98%;
+    height: 30px;
+    border-radius: 10px;
+    outline: groove 3px blueviolet;
+    text-align: center;
+    animation-name: fadeUpAnime;/*アニメーションの定義名*/
+    animation-duration:1.5s;/*アニメーション変化時間 ※デフォルト*/
+    animation-fill-mode:forwards;/*アニメーションの開始と終了時の状態を指定*/
+    opacity:0;
+}
+
+.file-input {
+    font-size: 20px;
+    width: 98%;
+    height: 30px;
+    border-radius: 10px;
+    outline: groove 3px rgb(226, 44, 44);
+    text-align: center;
+    animation-name: fadeUpAnime;/*アニメーションの定義名*/
+    animation-duration:1.5s;/*アニメーション変化時間 ※デフォルト*/
+    animation-fill-mode:forwards;/*アニメーションの開始と終了時の状態を指定*/
+    opacity:0;
+}
+
+.story-input {
+    margin-left: 39%;
+    font-size: 20px;
+    width: 20%;
+    border-radius: 10px;
+    outline: groove 3px rgb(43, 171, 226);
+    text-align: center;
+    animation-name: fadeUpAnime;/*アニメーションの定義名*/
+    animation-duration:1.7s;/*アニメーション変化時間 ※デフォルト*/
+    animation-fill-mode:forwards;/*アニメーションの開始と終了時の状態を指定*/
+    opacity:0;
+}
+
+.server-input {
+    margin-left: 39%;
+    font-size: 20px;
+    width: 20%;
+    border-radius: 10px;
+    outline: groove 3px rgb(226, 226, 44);
+    text-align: center;
+    animation-name: fadeUpAnime;/*アニメーションの定義名*/
+    animation-duration:1.7s;/*アニメーション変化時間 ※デフォルト*/
+    animation-fill-mode:forwards;/*アニメーションの開始と終了時の状態を指定*/
+    opacity:0;
+}
+
+.input-button {
+    margin-top: 10px;
+    margin-left: 29%;
+    width: 40%;
+    height: 40px;
+    font-family: cursive;
+    font-size: 25px;
+    outline: groove 3px rgb(182, 67, 167);
+    border-radius: 10px;
+    background-color: rgb(230, 122, 215);
+    animation-name: fadeUpAnime;/*アニメーションの定義名*/
+    animation-duration:2s;/*アニメーション変化時間 ※デフォルト*/
+    animation-fill-mode:forwards;/*アニメーションの開始と終了時の状態を指定*/
+    opacity:0;
+}
+
+.download-finish {
+    margin-top: 10px;
+    margin-left: 10%;
+    width: 77%;
+    height: 40px;
+    font-family: cursive;
+    font-size: 13px;
+    outline: groove 3px rgb(182, 67, 16);
+    border-radius: 10px;
+    background-color: rgb(230, 122, 21);
+    animation-name: fadeUpAnime;/*アニメーションの定義名*/
+    animation-duration:2.5s;/*アニメーション変化時間 ※デフォルト*/
+    animation-fill-mode:forwards;/*アニメーションの開始と終了時の状態を指定*/
+    opacity:0;
+}
+
+@keyframes fadeUpAnime{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
