@@ -7,10 +7,6 @@ import subprocess
 
 app = Flask(__name__, static_folder="static")
 
-# random_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-# random_str = random.sample(random_list, 8)
-# global_file_random = "".join(random_str)
-
 story_num_list = []
 file_name_list = []
 
@@ -48,7 +44,8 @@ def resutls():
     url_decoded = parse.unquote(url_encoded)
 
     print(url_decoded)
-
+    
+    #This is for local. 
     # dir = os.getcwd().replace("\\", "/")
     # ffmpeg_path = dir + "/ShichoJP_downloader/ffmpeg/bin/ffmpeg.exe"
     # output_path = dir + "/ShichoJP_downloader/outputs/output_" + str(i+1) + ".mp4"
@@ -58,8 +55,6 @@ def resutls():
     output_path = "/home/tiramisu/mysite/" + str(file_name) +"_output_" + str(i) + ".mp4"
     ffmpeg_command = "ffmpeg" + ' -i ' + url_decoded + ' -c copy -bsf:a aac_adtstoasc ' + output_path
     subprocess.call(ffmpeg_command, shell=True)
-
-    # return render_template("results.html"), send_file(output_path, as_attachment=True, attachment_filename="".join(random_str)+"_output_"+str(i)+".mp4")
 
     return send_file(output_path, as_attachment=True, attachment_filename=str(str(file_name)+"_output_"+str(i)+".mp4"))
 
